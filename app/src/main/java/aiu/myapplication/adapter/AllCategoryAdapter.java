@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-
 import java.util.List;
 
 import aiu.myapplication.R;
@@ -17,8 +16,8 @@ import aiu.myapplication.model.AllCategoryModel;
 
 public class AllCategoryAdapter extends RecyclerView.Adapter<AllCategoryAdapter.AllCategoryViewHolder> {
 
-    Context context;
-    List<AllCategoryModel> categoryList;
+    private Context context;
+    private List<AllCategoryModel> categoryList;
 
     public AllCategoryAdapter(Context context, List<AllCategoryModel> categoryList) {
         this.context = context;
@@ -37,7 +36,7 @@ public class AllCategoryAdapter extends RecyclerView.Adapter<AllCategoryAdapter.
     @Override
     public void onBindViewHolder(@NonNull AllCategoryViewHolder holder, int position) {
 
-        holder.categoryImage.setImageResource(categoryList.get(position).getImageurl());
+        holder.categoryImage.setImageResource(categoryList.get(position).getImageUrl());
 
     }
 
@@ -46,7 +45,7 @@ public class AllCategoryAdapter extends RecyclerView.Adapter<AllCategoryAdapter.
         return categoryList.size();
     }
 
-    public  static class AllCategoryViewHolder extends RecyclerView.ViewHolder{
+    public static class AllCategoryViewHolder extends RecyclerView.ViewHolder {
 
         ImageView categoryImage;
 
@@ -60,4 +59,3 @@ public class AllCategoryAdapter extends RecyclerView.Adapter<AllCategoryAdapter.
 
 }
 
-// lets import all the category images

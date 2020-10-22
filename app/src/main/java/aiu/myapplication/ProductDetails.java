@@ -10,12 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ProductDetails extends AppCompatActivity {
 
-    ImageView img, back;
-    TextView proName, proPrice, proDesc, proQty, proUnit;
-
-    String name, price, desc, qty, unit;
-    int image;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,26 +17,26 @@ public class ProductDetails extends AppCompatActivity {
 
         Intent i = getIntent();
 
-         name = i.getStringExtra("name");
-         image = i.getIntExtra("image", R.drawable.b1);
-         price = i.getStringExtra("price");
-         desc = i.getStringExtra("desc");
-         qty = i.getStringExtra("qty");
-         unit = i.getStringExtra("unit");
+        String name = i.getStringExtra("name");
+        int image = i.getIntExtra("image", R.drawable.b1);
+        String price = i.getStringExtra("price");
+        String desc = i.getStringExtra("desc");
+        String qty = i.getStringExtra("qty");
+        String unit = i.getStringExtra("unit");
 
-         proName = findViewById(R.id.productName);
-         proDesc = findViewById(R.id.prodDesc);
-         proPrice = findViewById(R.id.prodPrice);
-         img = findViewById(R.id.big_image);
-         back = findViewById(R.id.back2);
-         proQty = findViewById(R.id.qty);
-         proUnit = findViewById(R.id.unit);
+        TextView proName = findViewById(R.id.productName);
+        TextView proDesc = findViewById(R.id.prodDesc);
+        TextView proPrice = findViewById(R.id.prodPrice);
+        ImageView img = findViewById(R.id.big_image);
+        ImageView back = findViewById(R.id.back2);
+        TextView proQty = findViewById(R.id.qty);
+        TextView proUnit = findViewById(R.id.unit);
 
-         proName.setText(name);
-         proPrice.setText(price);
-         proDesc.setText(desc);
-         proQty.setText(qty);
-         proUnit.setText(unit);
+        proName.setText(name);
+        proPrice.setText(price);
+        proDesc.setText(desc);
+        proQty.setText(qty);
+        proUnit.setText(unit);
 
 
         img.setImageResource(image);

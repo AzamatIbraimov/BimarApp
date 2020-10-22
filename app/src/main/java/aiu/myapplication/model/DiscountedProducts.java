@@ -2,9 +2,8 @@ package aiu.myapplication.model;
 
 public class DiscountedProducts {
 
-
-    Integer id;
-    Integer imageurl;
+    private Integer id;
+    private Integer imageurl;
 
     public DiscountedProducts(Integer id, Integer imageurl) {
         this.id = id;

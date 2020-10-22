@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-
 import java.util.List;
 
 import aiu.myapplication.R;
@@ -17,8 +16,8 @@ import aiu.myapplication.model.DiscountedProducts;
 
 public class DiscountedProductAdapter extends RecyclerView.Adapter<DiscountedProductAdapter.DiscountedProductViewHolder> {
 
-    Context context;
-    List<DiscountedProducts> discountedProductsList;
+    private Context context;
+    private List<DiscountedProducts> discountedProductsList;
 
     public DiscountedProductAdapter(Context context, List<DiscountedProducts> discountedProductsList) {
         this.context = context;
@@ -45,7 +44,7 @@ public class DiscountedProductAdapter extends RecyclerView.Adapter<DiscountedPro
         return discountedProductsList.size();
     }
 
-    public static class DiscountedProductViewHolder extends  RecyclerView.ViewHolder{
+    public static class DiscountedProductViewHolder extends RecyclerView.ViewHolder {
 
         ImageView discountImageView;
 

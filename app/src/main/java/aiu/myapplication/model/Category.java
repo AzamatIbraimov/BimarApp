@@ -2,13 +2,12 @@ package aiu.myapplication.model;
 
 public class Category {
 
+    private Integer id;
+    private Integer imageUrl;
 
-    Integer id;
-    Integer imageurl;
-
-    public Category(Integer id, Integer imageurl) {
+    public Category(Integer id, Integer imageUrl) {
         this.id = id;
-        this.imageurl = imageurl;
+        this.imageUrl = imageUrl;
     }
 
     public Integer getId() {
@@ -19,12 +18,12 @@ public class Category {
         this.id = id;
     }
 
-    public Integer getImageurl() {
-        return imageurl;
+    public Integer getImageUrl() {
+        return imageUrl;
     }
 
-    public void setImageurl(Integer imageurl) {
-        this.imageurl = imageurl;
+    public void setImageUrl(Integer imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
 }

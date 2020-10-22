@@ -19,8 +19,8 @@ import aiu.myapplication.model.RecentlyViewed;
 
 public class RecentlyViewedAdapter extends RecyclerView.Adapter<RecentlyViewedAdapter.RecentlyViewedViewHolder> {
 
-    Context context;
-    List<RecentlyViewed> recentlyViewedList;
+    private Context context;
+    private List<RecentlyViewed> recentlyViewedList;
 
     public RecentlyViewedAdapter(Context context, List<RecentlyViewed> recentlyViewedList) {
         this.context = context;
@@ -49,13 +49,13 @@ public class RecentlyViewedAdapter extends RecyclerView.Adapter<RecentlyViewedAd
             @Override
             public void onClick(View view) {
 
-                Intent i=new Intent(context, ProductDetails.class);
+                Intent i = new Intent(context, ProductDetails.class);
                 i.putExtra("name", recentlyViewedList.get(position).getName());
-                i.putExtra("image", recentlyViewedList.get(position).getBigimageurl());
-                i.putExtra("price",recentlyViewedList.get(position).getPrice());
-                i.putExtra("desc",recentlyViewedList.get(position).getDescription());
-                i.putExtra("qty",recentlyViewedList.get(position).getQuantity());
-                i.putExtra("unit",recentlyViewedList.get(position).getUnit());
+                i.putExtra("image", recentlyViewedList.get(position).getBigimageUrl());
+                i.putExtra("price", recentlyViewedList.get(position).getPrice());
+                i.putExtra("desc", recentlyViewedList.get(position).getDescription());
+                i.putExtra("qty", recentlyViewedList.get(position).getQuantity());
+                i.putExtra("unit", recentlyViewedList.get(position).getUnit());
 
                 context.startActivity(i);
 
@@ -69,7 +69,7 @@ public class RecentlyViewedAdapter extends RecyclerView.Adapter<RecentlyViewedAd
         return recentlyViewedList.size();
     }
 
-    public  static class RecentlyViewedViewHolder extends RecyclerView.ViewHolder{
+    public static class RecentlyViewedViewHolder extends RecyclerView.ViewHolder {
 
         TextView name, description, price, qty, unit;
         ConstraintLayout bg;

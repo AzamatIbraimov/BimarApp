@@ -2,31 +2,31 @@ package aiu.myapplication.model;
 
 public class RecentlyViewed {
 
-    String name;
-    String description;
-    String price;
-    String quantity;
-    String unit;
-    int imageUrl;
-    int bigimageurl;
+    private String name;
+    private String description;
+    private String price;
+    private String quantity;
+    private String unit;
+    private int imageUrl;
+    private int bigimageUrl;
 
     public RecentlyViewed(String name, String description, String price, String quantity, String unit, int
-            imageUrl, int bigimageurl) {
+            imageUrl, int bigimageUrl) {
         this.name = name;
         this.description = description;
         this.price = price;
         this.quantity = quantity;
         this.unit = unit;
         this.imageUrl = imageUrl;
-        this.bigimageurl = bigimageurl;
+        this.bigimageUrl = bigimageUrl;
     }
 
-    public int getBigimageurl() {
-        return bigimageurl;
+    public int getBigimageUrl() {
+        return bigimageUrl;
     }
 
-    public void setBigimageurl(int bigimageurl) {
-        this.bigimageurl = bigimageurl;
+    public void setBigimageUrl(int bigimageUrl) {
+        this.bigimageUrl = bigimageUrl;
     }
 
     public String getName() {
