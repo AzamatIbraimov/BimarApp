@@ -24,7 +24,7 @@ class RecentlyViewedAdapter(private val context: Context, private val recentlyVi
         holder.name.text = recentlyViewedList[position].name
         holder.description.text = recentlyViewedList[position].description
         holder.price.text = recentlyViewedList[position].price
-        holder.qty.text = recentlyViewedList[position].quantity
+        holder.quantity.text = recentlyViewedList[position].quantity
         holder.unit.text = recentlyViewedList[position].unit
         holder.bg.setBackgroundResource(recentlyViewedList[position].imageUrl)
         holder.itemView.setOnClickListener {
@@ -32,8 +32,8 @@ class RecentlyViewedAdapter(private val context: Context, private val recentlyVi
             i.putExtra("name", recentlyViewedList[position].name)
             i.putExtra("image", recentlyViewedList[position].bigimageUrl)
             i.putExtra("price", recentlyViewedList[position].price)
-            i.putExtra("desc", recentlyViewedList[position].description)
-            i.putExtra("qty", recentlyViewedList[position].quantity)
+            i.putExtra("description", recentlyViewedList[position].description)
+            i.putExtra("quantity", recentlyViewedList[position].quantity)
             i.putExtra("unit", recentlyViewedList[position].unit)
             context.startActivity(i)
         }
@@ -47,7 +47,7 @@ class RecentlyViewedAdapter(private val context: Context, private val recentlyVi
         var name: TextView
         var description: TextView
         var price: TextView
-        var qty: TextView
+        var quantity: TextView
         var unit: TextView
         var bg: ConstraintLayout
 
@@ -55,7 +55,7 @@ class RecentlyViewedAdapter(private val context: Context, private val recentlyVi
             name = itemView.findViewById(R.id.product_name)
             description = itemView.findViewById(R.id.description)
             price = itemView.findViewById(R.id.price)
-            qty = itemView.findViewById(R.id.qty)
+            quantity = itemView.findViewById(R.id.qty)
             unit = itemView.findViewById(R.id.unit)
             bg = itemView.findViewById(R.id.recently_layout)
         }
