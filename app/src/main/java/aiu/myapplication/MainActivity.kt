@@ -53,10 +53,10 @@ class MainActivity : AppCompatActivity() {
 
         // adding data to model
         val recentlyViewedList: MutableList<RecentlyViewed> = ArrayList()
-        recentlyViewedList.add(RecentlyViewed("Арбуз", "Очень богат арбуз таким химическим элементом, как магний, половина суточной дозы которого содержится всего в ста граммах арбузной мякоти.", "⊆ 80", "1", "KG", R.drawable.card4, R.drawable.b4))
-        recentlyViewedList.add(RecentlyViewed("Папая", "Папайя богата витаминами А и С. В одном свежем плоде средних размеров содержится 3 суточных нормы витамина С и около 60% суточной нормы витамина А.", "⊆ 85", "1", "KG", R.drawable.card3, R.drawable.b3))
+        recentlyViewedList.add(RecentlyViewed("Арбуз", "Очень богат арбуз магнием, половина суточной дозы которого содержится всего в ста граммах арбузной мякоти.", "⊆ 80", "1", "KG", R.drawable.card4, R.drawable.b4))
+        recentlyViewedList.add(RecentlyViewed("Папая", "Папайя богата витаминами А и С. В одном свежем плоде средних размеров содержится 3 суточных нормы витамина С.", "⊆ 85", "1", "KG", R.drawable.card3, R.drawable.b3))
         recentlyViewedList.add(RecentlyViewed("Клубника", "Клубника содержит массу полезных веществ и является одним из главных источников минералов.", "⊆ 30", "1", "KG", R.drawable.card2, R.drawable.b1))
-        recentlyViewedList.add(RecentlyViewed("Киви", "Киви богат пектиновыми веществами, которые выводят шлаки и токсины из организма, налаживают работу кишечника, устраняют запоры.", "⊆ 30", "1", "KG", R.drawable.card1, R.drawable.b2))
+        recentlyViewedList.add(RecentlyViewed("Киви", "Киви богат пектиновыми веществами, которые выводят шлаки и токсины из организма, устраняют запоры.", "⊆ 30", "1", "KG", R.drawable.card1, R.drawable.b2))
         setDiscountedRecycler(discountedProductsList)
         setCategoryRecycler(categoryList)
         setRecentlyViewedRecycler(recentlyViewedList)
