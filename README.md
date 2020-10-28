@@ -13,7 +13,7 @@ Mobile application for Bimar supermarket
 * Misc  
 1) Application icon changed :white_check_mark:
 2) Animation and design (figma or other) :white_check_mark:
-https://www.figma.com/file/pLiRoiVvKH2zLVkk4zrrLH/Quiz-App?node-id=0%3A1
+https://www.figma.com/file/h91VvEYkEYywrEZtOJCPTP/Bimar-%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82?node-id=0%3A1
 * Bonus points for retrofit calls and Unit testing 
 
 # Screenshots
