@@ -31,6 +31,11 @@ https://www.figma.com/file/h91VvEYkEYywrEZtOJCPTP/Bimar-%D1%81%D1%83%D0%BF%D0%B5
 </p>
 
 
+<p align="center">
+  <img src="https://sun9-74.userapi.com/impf/wSE_3HiKi9Ie5VvcBcSOTfVUCPMkIu66xfLdGQ/v_Pmu-3VMHA.jpg?size=738x1600&quality=96&proxy=1&sign=41860c30b7d3808c67bc4bf9710d39e1" alt="Preview"/>
+</p>
+
+
 # Purpose
 
 This is an International Ala-Too University project marking the studying Mobile Application Development. It's purpose is to build an app that uses Kotlin PL.
