@@ -9,6 +9,7 @@ import aiu.myapplication.model.DiscountedProducts
 import aiu.myapplication.model.RecentlyViewed
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -22,12 +23,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         discountRecyclerView = findViewById(R.id.discountedRecycler)
+        val basketIMV = findViewById<ImageView>(R.id.imageView)
         categoryRecyclerView = findViewById(R.id.categoryRecycler)
         val allCategory = findViewById<TextView>(R.id.allCategoryImage)
         recentlyViewedRecycler = findViewById(R.id.recently_item)
         allCategory.setOnClickListener {
             val i = Intent(this@MainActivity, AllCategory::class.java)
+            startActivity(i)
+        }
+        basketIMV.setOnClickListener {
+            val i = Intent(this@MainActivity, BasketActivity::class.java)
             startActivity(i)
         }
 

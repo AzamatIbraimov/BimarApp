@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Bimar</string>
+    <string name="preference_file_key">title</string>
 </resources>
